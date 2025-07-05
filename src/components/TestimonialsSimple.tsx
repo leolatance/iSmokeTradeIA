@@ -35,7 +35,7 @@ const TestimonialsSimple: React.FC = () => {
               <span className="text-gradient-primary">Depoimentos</span> Reais
             </h2>
             <p className="text-lg text-muted-foreground">
-              Veja o que nossos membros estão falando sobre o SmokeTrade IA 2.0
+              Veja o que nossos membros estão falando sobre o SmokeTrade IA
             </p>
           </div>
 

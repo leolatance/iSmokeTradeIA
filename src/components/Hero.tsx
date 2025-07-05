@@ -14,12 +14,8 @@ declare global {
 
 const Hero: React.FC = () => {
   const handleCTAClick = () => {
-    // Implementar integração com sistema de pagamento
-    // Por enquanto, scroll para o footer com mais info
-    const footer = document.querySelector('footer');
-    if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' });
-    }
+    // Redirecionar para o checkout
+    window.open('https://go.goatpayments.com.br/stf4fdjq1g?mcp_token=eyJwaWQiOjMxNTEyNzEsInNpZCI6OTkyNDE5NTY3LCJheCI6IjFjNzUzMmUwZDY4NjA1NTQ2OTk4OGRmNmZiMmEzYmIyIiwidHMiOjE3NTE3NDAxMDYsImV4cCI6MTc1NDE1OTMwNn0.m1R7INX8kQVzbNtpx3pYDOJ0ZuupDyVGiJAM5EHjQFQ&fbclid=PAQ0xDSwLWTihleHRuA2FlbQIxMAABp3n8rye3Oi8peLfSI3up6OHQ1GU5MXv-8RLHOj9j6nQjsIhDC4BugDQgU1Hm_aem_91xDWtQCxFUr1yMJCTqknA', '_blank');
     
     // Analytics tracking (implementar conforme necessário)
     if (typeof window !== 'undefined' && window.gtag) {
@@ -71,7 +67,7 @@ const Hero: React.FC = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              <span className="text-neon-green font-bold">+1000 manos</span> já tão usando e lucrando com o SmokeTrade IA 2.0
+              <span className="text-neon-green font-bold">+1000 manos</span> já tão usando e lucrando com o SmokeTrade IA
             </p>
           </header>
 

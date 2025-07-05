@@ -4,8 +4,8 @@ import { Shield, ExternalLink } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const handleCTAClick = () => {
-    // Implementar integração com sistema de pagamento
-    console.log('CTA clicked - redirecionar para pagamento');
+    // Redirecionar para o checkout
+    window.open('https://go.goatpayments.com.br/stf4fdjq1g?mcp_token=eyJwaWQiOjMxNTEyNzEsInNpZCI6OTkyNDE5NTY3LCJheCI6IjFjNzUzMmUwZDY4NjA1NTQ2OTk4OGRmNmZiMmEzYmIyIiwidHMiOjE3NTE3NDAxMDYsImV4cCI6MTc1NDE1OTMwNn0.m1R7INX8kQVzbNtpx3pYDOJ0ZuupDyVGiJAM5EHjQFQ&fbclid=PAQ0xDSwLWTihleHRuA2FlbQIxMAABp3n8rye3Oi8peLfSI3up6OHQ1GU5MXv-8RLHOj9j6nQjsIhDC4BugDQgU1Hm_aem_91xDWtQCxFUr1yMJCTqknA', '_blank');
   };
 
   return (
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           {/* Legal */}
           <div className="text-center space-y-4">
             <div className="text-sm text-muted-foreground">
-              <p>© 2024 SmokeTrade IA 2.0. Todos os direitos reservados.</p>
+              <p>© 2024 SmokeTrade IA. Todos os direitos reservados.</p>
               <p className="mt-2">
                 Este produto não garante resultados. Trading envolve riscos.
               </p>

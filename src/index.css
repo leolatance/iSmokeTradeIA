@@ -112,6 +112,23 @@
     background: var(--gradient-glow);
   }
 
+  /* Text Gradient Fix */
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .text-gradient-purple {
+    background: var(--gradient-purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
   /* Shadow Effects */
   .shadow-glow {
     box-shadow: var(--shadow-glow);

@@ -74,7 +74,7 @@ const GangIdentity: React.FC = () => {
           
           <h2 className="text-4xl md:text-6xl font-bold text-foreground mb-4 font-space">
             Bem-vindo à{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent animate-neon-pulse">
+            <span className="text-gradient-primary animate-neon-pulse">
               Gang
             </span>
           </h2>

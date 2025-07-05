@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             {/* Main Title */}
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 font-space leading-tight">
               <span className="block">Ganhe com</span>
-              <span className="bg-gradient-primary bg-clip-text text-transparent animate-neon-pulse">
+              <span className="text-gradient-primary animate-neon-pulse">
                 Daytrade
               </span>
               <span className="block">usando IA</span>

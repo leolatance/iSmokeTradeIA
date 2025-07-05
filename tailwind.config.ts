@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
 	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{ts,tsx}",
@@ -31,55 +31,52 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
-					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))',
-					glow: 'hsl(var(--secondary-glow))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					foreground: 'hsl(var(--destructive-foreground))',
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
+					foreground: 'hsl(var(--muted-foreground))',
 				},
 				accent: {
 					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
+					foreground: 'hsl(var(--accent-foreground))',
 				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
+					foreground: 'hsl(var(--popover-foreground))',
 				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
+					foreground: 'hsl(var(--card-foreground))',
 				},
-				neon: {
-					green: 'hsl(var(--neon-green))',
-					purple: 'hsl(var(--neon-purple))'
-				},
-				dark: {
-					bg: 'hsl(var(--dark-bg))',
-					card: 'hsl(var(--dark-card))',
-					surface: 'hsl(var(--dark-surface))'
-				}
+				'cannabis-green': 'hsl(var(--cannabis-green))',
+				'cyber-blue': 'hsl(var(--cyber-blue))',
+				'rebel-purple': 'hsl(var(--rebel-purple))',
+				'lime-accent': 'hsl(var(--lime-accent))',
+				'smoke-gray': 'hsl(var(--smoke-gray))',
+				'earth-brown': 'hsl(var(--earth-brown))',
+				green: 'hsl(var(--cannabis-green))',
+				purple: 'hsl(var(--rebel-purple))',
 			},
 			backgroundImage: {
-				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-purple': 'var(--gradient-purple)',
-				'gradient-dark': 'var(--gradient-dark)',
-				'gradient-glow': 'var(--gradient-glow)'
+				'gradient-primary': 'linear-gradient(135deg, hsl(142 69% 45%), hsl(80 70% 50%))',
+				'gradient-cyber': 'linear-gradient(135deg, hsl(192 100% 60%), hsl(192 90% 55%))',
+				'gradient-purple': 'linear-gradient(135deg, hsl(280 60% 35%), hsl(260 55% 40%))',
+				'gradient-tech': 'linear-gradient(135deg, hsl(192 100% 60% / 0.3), hsl(142 69% 45% / 0.2))',
 			},
 			boxShadow: {
-				'neon': 'var(--shadow-neon)',
-				'purple': 'var(--shadow-purple)',
-				'card': 'var(--shadow-card)',
-				'glow': '0 0 30px hsl(120 100% 50% / 0.4)',
-				'purple-glow': '0 0 30px hsl(270 95% 65% / 0.4)'
+				'cannabis': '0 0 25px hsl(142 69% 45% / 0.4)',
+				'cyber': '0 0 25px hsl(192 100% 60% / 0.3)',
+				'purple': '0 0 25px hsl(280 60% 35% / 0.4)',
+				'glow': '0 0 25px hsl(142 69% 45% / 0.4)',
+				'cyber-glow': '0 0 25px hsl(192 100% 60% / 0.3)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -103,61 +100,63 @@ export default {
 						height: '0'
 					}
 				},
-				'fade-in': {
-					'0%': {
-						opacity: '0',
-						transform: 'translateY(20px)'
-					},
-					'100%': {
-						opacity: '1',
-						transform: 'translateY(0)'
-					}
-				},
-				'glow-pulse': {
+				'cannabis-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px hsl(120 100% 50% / 0.3)'
+						boxShadow: '0 0 20px hsl(142 69% 45% / 0.3)'
 					},
 					'50%': {
-						boxShadow: '0 0 40px hsl(120 100% 50% / 0.6)'
+						boxShadow: '0 0 35px hsl(142 69% 45% / 0.6)'
 					}
 				},
-				'float': {
+				'smooth-float': {
 					'0%, 100%': {
 						transform: 'translateY(0px)'
 					},
 					'50%': {
-						transform: 'translateY(-10px)'
+						transform: 'translateY(-8px)'
+					}
+				},
+				'gradient-shift': {
+					'0%, 100%': {
+						backgroundPosition: '0% 50%'
+					},
+					'50%': {
+						backgroundPosition: '100% 50%'
 					}
 				},
 				'slide-up': {
-					'0%': {
-						transform: 'translateY(50px)',
-						opacity: '0'
+					from: {
+						opacity: '0',
+						transform: 'translateY(30px)'
 					},
-					'100%': {
-						transform: 'translateY(0)',
-						opacity: '1'
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
 					}
 				},
-				'neon-pulse': {
+				'cyber-pulse': {
 					'0%, 100%': {
-						textShadow: '0 0 5px hsl(120 100% 50%), 0 0 10px hsl(120 100% 50%), 0 0 15px hsl(120 100% 50%)'
+						textShadow: '0 0 10px hsl(192 100% 60% / 0.5)'
 					},
 					'50%': {
-						textShadow: '0 0 10px hsl(120 100% 50%), 0 0 20px hsl(120 100% 50%), 0 0 30px hsl(120 100% 50%)'
+						textShadow: '0 0 20px hsl(192 100% 60% / 0.8)'
 					}
-				}
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.6s ease-out',
-				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
-				'float': 'float 3s ease-in-out infinite',
+				'cannabis-glow': 'cannabis-glow 3s ease-in-out infinite',
+				'smooth-float': 'smooth-float 5s ease-in-out infinite',
+				'gradient-shift': 'gradient-shift 4s ease infinite',
 				'slide-up': 'slide-up 0.6s ease-out',
-				'neon-pulse': 'neon-pulse 2s ease-in-out infinite'
+				'glow-pulse': 'cannabis-glow 3s ease-in-out infinite',
+				'float': 'smooth-float 5s ease-in-out infinite',
+				'cyber-pulse': 'cyber-pulse 2.5s ease-in-out infinite',
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
+export default config;

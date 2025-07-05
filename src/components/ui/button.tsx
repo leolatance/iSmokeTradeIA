@@ -18,11 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cannabis: "bg-gradient-primary text-primary-foreground font-semibold shadow-cannabis hover:shadow-glow transition-all duration-300 hover:scale-105",
-        		cyber: "bg-gradient-cyber text-primary-foreground font-semibold shadow-cyber hover:shadow-cyber-glow transition-all duration-300 hover:scale-105",
-        purple: "bg-gradient-purple text-foreground font-semibold shadow-purple transition-all duration-300 hover:scale-105",
-        cta: "bg-gradient-primary text-primary-foreground font-bold text-lg shadow-cannabis hover:shadow-glow transition-all duration-300 hover:scale-110 border-2 border-cannabis-green/30 animate-glow-pulse",
-        gang: "bg-gradient-dark text-foreground font-bold border-2 border-cannabis-green hover:bg-gradient-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-glow"
+        neon: "bg-gradient-primary text-primary-foreground font-semibold shadow-neon-green hover:shadow-glow transition-all duration-300 hover:scale-105",
+        'neon-purple': "bg-gradient-purple text-secondary-foreground font-semibold shadow-neon-purple hover:shadow-purple transition-all duration-300 hover:scale-105",
+        purple: "bg-gradient-purple text-secondary-foreground font-semibold shadow-purple transition-all duration-300 hover:scale-105",
+        cta: "bg-gradient-primary text-primary-foreground font-bold text-lg shadow-neon-green hover:shadow-glow transition-all duration-300 hover:scale-110 border-2 border-neon-green/30 animate-glow-pulse",
+        gang: "bg-gradient-dark text-foreground font-bold border-2 border-neon-green hover:bg-gradient-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-glow"
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -50,21 +50,21 @@ const HowItWorks: React.FC = () => {
         </div>
 
         {/* Proof Section */}
-        <div className="bg-gradient-tech border border-cyber-blue/30 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
+        <div className="bg-gradient-tech border border-neon-purple/30 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-foreground mb-6 text-center font-space">
             🔥 ENQUANTO VOCÊ DESCANSA, O ROBÔ TRABALHA
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-6 text-center">
-              <div className="text-cannabis-green font-bold text-2xl mb-2">8 PARES</div>
+              <div className="text-neon-green font-bold text-2xl mb-2">8 PARES</div>
               <div className="text-muted-foreground text-sm">Forex, Crypto, Ouro</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-6 text-center">
-              <div className="text-cyber-blue font-bold text-2xl mb-2">75%+ WIN</div>
+              <div className="text-neon-purple font-bold text-2xl mb-2">75%+ WIN</div>
               <div className="text-muted-foreground text-sm">Taxa de acerto</div>
             </div>
             <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-6 text-center">
-              <div className="text-lime-accent font-bold text-2xl mb-2">24/7</div>
+              <div className="text-neon-green font-bold text-2xl mb-2">24/7</div>
               <div className="text-muted-foreground text-sm">Nunca para</div>
             </div>
           </div>
@@ -72,7 +72,7 @@ const HowItWorks: React.FC = () => {
 
         <div className="relative max-w-4xl mx-auto">
           {/* Connecting line */}
-          <div className="absolute left-8 top-16 bottom-16 w-0.5 bg-gradient-to-b from-cannabis-green via-cyber-blue to-cannabis-green opacity-30 hidden md:block"></div>
+          <div className="absolute left-8 top-16 bottom-16 w-0.5 bg-gradient-to-b from-neon-green via-neon-purple to-neon-green opacity-30 hidden md:block"></div>
           
           <div className="space-y-8">
             {steps.map((step, index) => (
@@ -86,13 +86,13 @@ const HowItWorks: React.FC = () => {
                   <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center shadow-glow group-hover:shadow-cannabis transition-all duration-300 group-hover:scale-110">
                     <step.icon className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-cyber-blue rounded-full flex items-center justify-center text-xs font-bold text-foreground">
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-neon-purple rounded-full flex items-center justify-center text-xs font-bold text-foreground">
                     {step.id}
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-6 group-hover:border-cannabis-green/50 transition-all duration-300 group-hover:shadow-card">
+                                  <div className="flex-1 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-6 group-hover:border-neon-green/50 transition-all duration-300 group-hover:shadow-card">
                   <h3 className="text-xl font-semibold text-foreground mb-2 font-space">
                     {step.title}
                   </h3>
@@ -100,7 +100,7 @@ const HowItWorks: React.FC = () => {
                     {step.description}
                   </p>
                   {step.highlight && (
-                    <div className="inline-block bg-gradient-cyber text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                    <div className="inline-block bg-gradient-neon text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                       {step.highlight}
                     </div>
                   )}
@@ -109,7 +109,7 @@ const HowItWorks: React.FC = () => {
                 {/* Arrow for mobile */}
                 {index < steps.length - 1 && (
                   <div className="absolute -bottom-4 left-8 md:hidden">
-                    <ArrowDown className="w-4 h-4 text-cannabis-green animate-float" />
+                    <ArrowDown className="w-4 h-4 text-neon-green animate-float" />
                   </div>
                 )}
               </div>
@@ -118,22 +118,22 @@ const HowItWorks: React.FC = () => {
         </div>
 
         <div className="text-center mt-16">
-                  <div className="bg-gradient-tech border border-cyber-blue/30 rounded-lg p-8 max-w-3xl mx-auto">
-          <h3 className="text-3xl font-bold text-cyber-blue mb-4 font-space">
+                  <div className="bg-gradient-tech border border-neon-purple/30 rounded-lg p-8 max-w-3xl mx-auto">
+          <h3 className="text-3xl font-bold text-neon-purple mb-4 font-space">
               🎯 RESULTADO: VOCÊ RICO!
             </h3>
             <p className="text-muted-foreground text-lg mb-4">
               Enquanto os outros trabalham como escravos, você lucra dormindo.
             </p>
             <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 text-left max-w-md mx-auto">
-              <div className="text-cannabis-green font-bold mb-2">💰 Exemplo Real:</div>
+              <div className="text-neon-green font-bold mb-2">💰 Exemplo Real:</div>
               <div className="text-sm space-y-1">
                 <div>• <strong>Segunda:</strong> +R$ 280</div>
                 <div>• <strong>Terça:</strong> +R$ 450</div>
                 <div>• <strong>Quarta:</strong> +R$ 320</div>
                 <div>• <strong>Quinta:</strong> +R$ 380</div>
                 <div>• <strong>Sexta:</strong> +R$ 510</div>
-                <div className="text-cyber-blue font-bold text-lg pt-2 animate-cyber-pulse">
+                <div className="text-neon-purple font-bold text-lg pt-2 animate-neon-pulse">
                   = R$ 1.940 na semana
                 </div>
               </div>

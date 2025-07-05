@@ -82,19 +82,19 @@ const riskProfiles: RiskProfile[] = [
     name: "Não Sou Trouxa",
     risk: "1-2%",
     description: "Proteção máxima",
-    colorClass: "text-cannabis-green"
+    colorClass: "text-neon-green"
   },
   {
     name: "Equilibrado",
     risk: "2-3%",
     description: "Ideal pra maioria",
-    colorClass: "text-cyber-blue"
+    colorClass: "text-neon-purple"
   },
   {
     name: "Vou Ficar Rico",
     risk: "3-5%",
     description: "Maior potencial",
-    colorClass: "text-lime-accent"
+    colorClass: "text-neon-green"
   }
 ];
 
@@ -126,7 +126,7 @@ const WhyItWorks: React.FC = () => {
           {features.map((feature, index) => (
             <article
               key={feature.id}
-              className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 hover:border-cannabis-green/50 transition-all duration-300 hover:shadow-card animate-slide-up"
+              className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 hover:border-neon-green/50 transition-all duration-300 hover:shadow-card animate-slide-up"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Icon & Highlight */}
@@ -134,7 +134,7 @@ const WhyItWorks: React.FC = () => {
                 <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center shadow-glow" aria-hidden="true">
                   <feature.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <div className="bg-gradient-cyber text-primary-foreground px-3 py-1 rounded-full text-xs font-bold">
+                <div className="bg-gradient-neon text-primary-foreground px-3 py-1 rounded-full text-xs font-bold">
                   {feature.highlight}
                 </div>
               </div>
@@ -152,7 +152,7 @@ const WhyItWorks: React.FC = () => {
               <ul className="space-y-3" role="list">
                 {feature.benefits.map((benefit, i) => (
                   <li key={i} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-cannabis-green flex-shrink-0" aria-hidden="true" />
+                    <CheckCircle className="w-5 h-5 text-neon-green flex-shrink-0" aria-hidden="true" />
                     <span className="text-sm text-foreground">{benefit}</span>
                   </li>
                 ))}
@@ -162,9 +162,9 @@ const WhyItWorks: React.FC = () => {
         </div>
 
         {/* Risk Management Section */}
-        <div className="bg-gradient-tech border border-cyber-blue/30 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
+        <div className="bg-gradient-tech border border-neon-purple/30 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center font-space">
-            <DollarSign className="w-8 h-8 text-cyber-blue inline mr-2" aria-hidden="true" />
+            <DollarSign className="w-8 h-8 text-neon-purple inline mr-2" aria-hidden="true" />
             NUNCA MAIS PERCA TUDO
           </h3>
           <p className="text-muted-foreground text-lg text-center mb-8">
@@ -175,13 +175,13 @@ const WhyItWorks: React.FC = () => {
             {riskProfiles.map((profile, index) => (
               <div
                 key={index}
-                className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-6 text-center hover:border-cannabis-green/50 transition-all duration-300 animate-slide-up touch-target"
+                className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-6 text-center hover:border-neon-green/50 transition-all duration-300 animate-slide-up touch-target"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className={`${profile.colorClass} font-bold text-2xl mb-2`}>
                   {profile.name}
                 </div>
-                <div className="text-cyber-blue font-bold text-lg mb-2">
+                <div className="text-neon-purple font-bold text-lg mb-2">
                   {profile.risk} por operação
                 </div>
                 <div className="text-sm text-muted-foreground">
@@ -201,10 +201,10 @@ const WhyItWorks: React.FC = () => {
         </div>
 
         {/* Technical Indicators */}
-        <div className="bg-gradient-glow border border-rebel-purple/30 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
+                  <div className="bg-gradient-glow border border-neon-purple/30 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
           <div className="text-center mb-8">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 font-space">
-              <BarChart3 className="w-8 h-8 text-rebel-purple inline mr-2" aria-hidden="true" />
+              <BarChart3 className="w-8 h-8 text-neon-purple inline mr-2" aria-hidden="true" />
               ARSENAL SECRETO DOS PROS
             </h3>
             <p className="text-muted-foreground text-lg">
@@ -216,7 +216,7 @@ const WhyItWorks: React.FC = () => {
             {technicalIndicators.map((indicator, index) => (
               <div
                 key={index}
-                className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 hover:border-rebel-purple/50 transition-all duration-300 animate-slide-up touch-target"
+                className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4 hover:border-neon-purple/50 transition-all duration-300 animate-slide-up touch-target"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="text-center">
@@ -232,26 +232,26 @@ const WhyItWorks: React.FC = () => {
         {/* Stats Section */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-cannabis-green mb-2">75%+</div>
+                          <div className="text-3xl md:text-4xl font-bold text-neon-green mb-2">75%+</div>
             <div className="text-sm text-muted-foreground">Precisão média</div>
           </div>
                       <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-cyber-blue mb-2">8</div>
+              <div className="text-3xl md:text-4xl font-bold text-neon-purple mb-2">8</div>
               <div className="text-sm text-muted-foreground">Pares disponíveis</div>
             </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-lime-accent mb-2">99.9%</div>
+                          <div className="text-3xl md:text-4xl font-bold text-neon-green mb-2">99.9%</div>
             <div className="text-sm text-muted-foreground">Uptime garantido</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-rebel-purple mb-2">24/7</div>
+                          <div className="text-3xl md:text-4xl font-bold text-neon-purple mb-2">24/7</div>
             <div className="text-sm text-muted-foreground">Sistema ativo</div>
           </div>
         </div>
 
         {/* Final CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-cyber text-primary-foreground rounded-2xl p-8 max-w-2xl mx-auto">
+          <div className="bg-gradient-neon text-primary-foreground rounded-2xl p-8 max-w-2xl mx-auto">
             <h4 className="text-xl md:text-2xl font-bold mb-4 font-space">
               🚀 PRONTO PRA FICAR RICO?
             </h4>

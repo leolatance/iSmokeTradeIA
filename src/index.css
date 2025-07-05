@@ -8,67 +8,67 @@
 
 @layer base {
   :root {
-    /* Core Colors - Professional Dark Cannabis Theme */
-    --background: 210 15% 6%;
-    --foreground: 60 5% 96%;
+    /* Core Colors - Modern Neon Dark Theme */
+    --background: 0 0% 5%;              /* #0D0D0D */
+    --foreground: 0 0% 92%;             /* #EAEAEA */
 
-    --card: 210 15% 10%;
-    --card-foreground: 60 5% 94%;
+    --card: 0 0% 12%;                   /* #1F1F1F */
+    --card-foreground: 0 0% 92%;        /* #EAEAEA */
 
-    --popover: 210 15% 10%;
-    --popover-foreground: 60 5% 94%;
+    --popover: 0 0% 12%;                /* #1F1F1F */
+    --popover-foreground: 0 0% 92%;     /* #EAEAEA */
 
-    /* Cannabis Green Primary - Professional but rebellious */
-    --primary: 142 69% 45%;
-    --primary-foreground: 210 15% 6%;
-    --primary-glow: 142 69% 55%;
+    /* Neon Green Primary - Modern and electric */
+    --primary: 105 100% 54%;            /* #39FF14 */
+    --primary-foreground: 0 0% 5%;      /* #0D0D0D */
+    --primary-glow: 105 100% 64%;       /* Brighter glow */
 
-    /* Electric Blue Secondary - Tech vibes */
-    --secondary: 192 100% 60%;
-    --secondary-foreground: 210 15% 6%;
-    --secondary-glow: 192 100% 70%;
+    /* Neon Purple Secondary - Electric accent */
+    --secondary: 276 88% 53%;           /* #A020F0 */
+    --secondary-foreground: 0 0% 92%;   /* #EAEAEA */
+    --secondary-glow: 276 88% 63%;      /* Brighter glow */
 
-    --muted: 210 15% 18%;
-    --muted-foreground: 60 5% 75%;
+    --muted: 0 0% 12%;                  /* #1F1F1F */
+    --muted-foreground: 0 0% 70%;       /* Muted text */
 
-    --accent: 142 69% 45%;
-    --accent-foreground: 210 15% 6%;
+    --accent: 105 100% 54%;             /* #39FF14 */
+    --accent-foreground: 0 0% 5%;       /* #0D0D0D */
 
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 60 5% 96%;
+    --destructive: 0 69% 65%;           /* #FF4F4F */
+    --destructive-foreground: 0 0% 92%; /* #EAEAEA */
 
-    --border: 210 15% 20%;
-    --input: 210 15% 20%;
-    --ring: 142 69% 45%;
+    --border: 0 0% 20%;                 /* Subtle borders */
+    --input: 0 0% 12%;                  /* #1F1F1F */
+    --ring: 105 100% 54%;               /* #39FF14 */
 
     --radius: 0.75rem;
 
-    /* Custom Brand Colors - Cannabis Professional */
-    --cannabis-green: 142 69% 45%;      /* Deep forest green */
-    --cyber-blue: 192 100% 60%;         /* Electric blue */
-    --rebel-purple: 280 60% 35%;        /* Deep purple */
-    --earth-brown: 30 25% 25%;          /* Earthy brown */
-    --smoke-gray: 210 10% 30%;          /* Smoke gray */
-    --lime-accent: 80 70% 50%;          /* Bright lime for highlights */
+    /* Custom Brand Colors - Modern Neon */
+    --neon-green: 105 100% 54%;         /* #39FF14 */
+    --neon-purple: 276 88% 53%;         /* #A020F0 */
+    --dark-graphite: 0 0% 12%;          /* #1F1F1F */
+    --ice-white: 0 0% 92%;              /* #EAEAEA */
+    --alert-red: 0 69% 65%;             /* #FF4F4F */
+    --deep-black: 0 0% 5%;              /* #0D0D0D */
 
     /* Dark backgrounds */
-    --dark-bg: 210 15% 6%;
-    --dark-card: 210 15% 10%;
-    --dark-surface: 210 15% 18%;
+    --dark-bg: 0 0% 5%;                 /* #0D0D0D */
+    --dark-card: 0 0% 12%;              /* #1F1F1F */
+    --dark-surface: 0 0% 20%;           /* Darker surface */
 
-    /* Professional Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142 69% 45%), hsl(80 70% 50%));
-    --gradient-cyber: linear-gradient(135deg, hsl(192 100% 60%), hsl(192 90% 55%));
-    --gradient-purple: linear-gradient(135deg, hsl(280 60% 35%), hsl(260 55% 40%));
-    --gradient-dark: linear-gradient(135deg, hsl(210 15% 6%), hsl(210 15% 10%));
-    --gradient-glow: linear-gradient(135deg, hsl(142 69% 45% / 0.2), hsl(192 100% 60% / 0.15));
-    --gradient-tech: linear-gradient(135deg, hsl(192 100% 60% / 0.3), hsl(142 69% 45% / 0.2));
+    /* Modern Neon Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(105 100% 54%), hsl(105 100% 64%));
+    --gradient-neon: linear-gradient(135deg, hsl(105 100% 54%), hsl(276 88% 53%));
+    --gradient-purple: linear-gradient(135deg, hsl(276 88% 53%), hsl(276 88% 63%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 12%));
+    --gradient-glow: linear-gradient(135deg, hsl(105 100% 54% / 0.2), hsl(276 88% 53% / 0.15));
+    --gradient-tech: linear-gradient(135deg, hsl(276 88% 53% / 0.3), hsl(105 100% 54% / 0.2));
 
-    /* Professional Shadows */
-    --shadow-cannabis: 0 0 25px hsl(142 69% 45% / 0.4);
-    --shadow-cyber: 0 0 25px hsl(192 100% 60% / 0.3);
-    --shadow-purple: 0 0 25px hsl(280 60% 35% / 0.4);
-    --shadow-card: 0 15px 50px -10px hsl(210 15% 6% / 0.9);
+    /* Modern Neon Shadows */
+    --shadow-neon-green: 0 0 25px hsl(105 100% 54% / 0.4);
+    --shadow-neon-purple: 0 0 25px hsl(276 88% 53% / 0.4);
+    --shadow-alert: 0 0 25px hsl(0 69% 65% / 0.4);
+    --shadow-card: 0 15px 50px -10px hsl(0 0% 5% / 0.9);
 
     /* Smooth Professional Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -108,7 +108,7 @@
 
   /* Improved focus styles for accessibility */
   *:focus-visible {
-    @apply outline-2 outline-offset-2 outline-cannabis-green;
+    @apply outline-2 outline-offset-2 outline-neon-green;
   }
 
   /* Skip link for accessibility */
@@ -145,32 +145,40 @@
     animation: slide-up 0.6s ease-out;
   }
 
-  .animate-cyber-pulse {
-    animation: cyber-pulse 2.5s ease-in-out infinite;
+  .animate-neon-pulse {
+    animation: neon-pulse 2.5s ease-in-out infinite;
+  }
+
+  .animate-purple-pulse {
+    animation: purple-pulse 2.5s ease-in-out infinite;
   }
 
   /* Reduce animation frequency for better performance */
   @media (prefers-reduced-motion: no-preference) {
     .animate-glow-pulse {
-      animation: cannabis-glow 3s ease-in-out infinite;
+      animation: neon-glow 3s ease-in-out infinite;
     }
 
     .animate-float {
       animation: smooth-float 5s ease-in-out infinite;
     }
 
-    .animate-cyber-pulse {
-      animation: cyber-pulse 2.5s ease-in-out infinite;
+    .animate-neon-pulse {
+      animation: neon-pulse 2.5s ease-in-out infinite;
+    }
+
+    .animate-purple-pulse {
+      animation: purple-pulse 2.5s ease-in-out infinite;
     }
   }
 
-  /* Professional Background Gradients */
+  /* Modern Neon Background Gradients */
   .bg-gradient-primary {
     background: var(--gradient-primary);
   }
 
-  .bg-gradient-cyber {
-    background: var(--gradient-cyber);
+  .bg-gradient-neon {
+    background: var(--gradient-neon);
   }
 
   .bg-gradient-purple {
@@ -189,7 +197,7 @@
     background: var(--gradient-tech);
   }
 
-  /* Professional Text Gradients */
+  /* Modern Neon Text Gradients */
   .text-gradient-primary {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -199,8 +207,8 @@
     animation: gradient-shift 4s ease infinite;
   }
 
-  .text-gradient-cyber {
-    background: var(--gradient-cyber);
+  .text-gradient-neon {
+    background: var(--gradient-neon);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -220,37 +228,41 @@
   /* Fallback for text gradients */
   @supports not (-webkit-background-clip: text) {
     .text-gradient-primary {
-      color: hsl(var(--cannabis-green));
+      color: hsl(var(--neon-green));
     }
 
-    .text-gradient-cyber {
-      color: hsl(var(--cyber-blue));
+    .text-gradient-neon {
+      color: hsl(var(--neon-green));
     }
 
     .text-gradient-purple {
-      color: hsl(var(--rebel-purple));
+      color: hsl(var(--neon-purple));
     }
   }
 
-  /* Professional Shadow Effects */
+  /* Modern Neon Shadow Effects */
   .shadow-glow {
-    box-shadow: var(--shadow-cannabis);
+    box-shadow: var(--shadow-neon-green);
   }
 
-  .shadow-cyber {
-    box-shadow: var(--shadow-cyber);
+  .shadow-neon-green {
+    box-shadow: var(--shadow-neon-green);
   }
 
-  .shadow-cannabis {
-    box-shadow: var(--shadow-cannabis);
+  .shadow-neon-purple {
+    box-shadow: var(--shadow-neon-purple);
   }
 
-  .shadow-cyber-glow {
-    box-shadow: var(--shadow-cyber);
+  .shadow-neon-glow {
+    box-shadow: var(--shadow-neon-green);
   }
 
   .shadow-purple {
-    box-shadow: var(--shadow-purple);
+    box-shadow: var(--shadow-neon-purple);
+  }
+
+  .shadow-alert {
+    box-shadow: var(--shadow-alert);
   }
 
   .shadow-card {
@@ -266,52 +278,52 @@
     text-wrap: balance;
   }
 
-  /* Cannabis Professional Color utilities */
-  .text-cannabis-green {
-    color: hsl(var(--cannabis-green));
+  /* Modern Neon Color utilities */
+  .text-neon-green {
+    color: hsl(var(--neon-green));
   }
 
-  .text-cyber-blue {
-    color: hsl(var(--cyber-blue));
+  .text-neon-purple {
+    color: hsl(var(--neon-purple));
   }
 
-  .text-rebel-purple {
-    color: hsl(var(--rebel-purple));
+  .text-ice-white {
+    color: hsl(var(--ice-white));
   }
 
-  .text-lime-accent {
-    color: hsl(var(--lime-accent));
+  .text-alert-red {
+    color: hsl(var(--alert-red));
   }
 
-  .border-cannabis-green {
-    border-color: hsl(var(--cannabis-green));
+  .border-neon-green {
+    border-color: hsl(var(--neon-green));
   }
 
-  .border-cyber-blue {
-    border-color: hsl(var(--cyber-blue));
+  .border-neon-purple {
+    border-color: hsl(var(--neon-purple));
   }
 
-  .border-rebel-purple {
-    border-color: hsl(var(--rebel-purple));
+  .border-alert-red {
+    border-color: hsl(var(--alert-red));
   }
 
-  /* Cannabis theme specific classes */
-  .bg-smoke {
-    background-color: hsl(var(--smoke-gray));
+  /* Modern theme specific classes */
+  .bg-graphite {
+    background-color: hsl(var(--dark-graphite));
   }
 
-  .bg-earth {
-    background-color: hsl(var(--earth-brown));
+  .bg-deep-black {
+    background-color: hsl(var(--deep-black));
   }
 }
 
-/* Professional Animation Keyframes */
-@keyframes cannabis-glow {
+/* Modern Neon Animation Keyframes */
+@keyframes neon-glow {
   0%, 100% {
-    box-shadow: 0 0 20px hsl(142 69% 45% / 0.3);
+    box-shadow: 0 0 20px hsl(105 100% 54% / 0.3);
   }
   50% {
-    box-shadow: 0 0 35px hsl(142 69% 45% / 0.6);
+    box-shadow: 0 0 35px hsl(105 100% 54% / 0.6);
   }
 }
 
@@ -335,12 +347,21 @@
   }
 }
 
-@keyframes cyber-pulse {
+@keyframes neon-pulse {
   0%, 100% {
-    text-shadow: 0 0 10px hsl(192 100% 60% / 0.5);
+    text-shadow: 0 0 10px hsl(105 100% 54% / 0.5);
   }
   50% {
-    text-shadow: 0 0 20px hsl(192 100% 60% / 0.8);
+    text-shadow: 0 0 20px hsl(105 100% 54% / 0.8);
+  }
+}
+
+@keyframes purple-pulse {
+  0%, 100% {
+    text-shadow: 0 0 10px hsl(276 88% 53% / 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px hsl(276 88% 53% / 0.8);
   }
 }
 
@@ -358,15 +379,17 @@
   .animate-glow-pulse,
   .animate-float,
   .animate-slide-up,
-  .animate-cyber-pulse {
+  .animate-neon-pulse,
+  .animate-purple-pulse {
     animation: none !important;
   }
 
   .shadow-glow,
-  .shadow-cyber,
-  .shadow-cannabis,
-  .shadow-cyber-glow,
-  .shadow-purple {
+  .shadow-neon-green,
+  .shadow-neon-purple,
+  .shadow-neon-glow,
+  .shadow-purple,
+  .shadow-alert {
     box-shadow: none !important;
   }
 }

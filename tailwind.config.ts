@@ -56,27 +56,30 @@ const config: Config = {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))',
 				},
-				'cannabis-green': 'hsl(var(--cannabis-green))',
-				'cyber-blue': 'hsl(var(--cyber-blue))',
-				'rebel-purple': 'hsl(var(--rebel-purple))',
-				'lime-accent': 'hsl(var(--lime-accent))',
-				'smoke-gray': 'hsl(var(--smoke-gray))',
-				'earth-brown': 'hsl(var(--earth-brown))',
-				green: 'hsl(var(--cannabis-green))',
-				purple: 'hsl(var(--rebel-purple))',
+				'neon-green': 'hsl(var(--neon-green))',
+				'neon-purple': 'hsl(var(--neon-purple))',
+				'dark-graphite': 'hsl(var(--dark-graphite))',
+				'ice-white': 'hsl(var(--ice-white))',
+				'alert-red': 'hsl(var(--alert-red))',
+				'deep-black': 'hsl(var(--deep-black))',
+				green: 'hsl(var(--neon-green))',
+				purple: 'hsl(var(--neon-purple))',
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, hsl(142 69% 45%), hsl(80 70% 50%))',
-				'gradient-cyber': 'linear-gradient(135deg, hsl(192 100% 60%), hsl(192 90% 55%))',
-				'gradient-purple': 'linear-gradient(135deg, hsl(280 60% 35%), hsl(260 55% 40%))',
-				'gradient-tech': 'linear-gradient(135deg, hsl(192 100% 60% / 0.3), hsl(142 69% 45% / 0.2))',
+				'gradient-primary': 'linear-gradient(135deg, hsl(105 100% 54%), hsl(105 100% 64%))',
+				'gradient-neon': 'linear-gradient(135deg, hsl(105 100% 54%), hsl(276 88% 53%))',
+				'gradient-purple': 'linear-gradient(135deg, hsl(276 88% 53%), hsl(276 88% 63%))',
+				'gradient-dark': 'linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 12%))',
+				'gradient-glow': 'linear-gradient(135deg, hsl(105 100% 54% / 0.2), hsl(276 88% 53% / 0.15))',
+				'gradient-tech': 'linear-gradient(135deg, hsl(276 88% 53% / 0.3), hsl(105 100% 54% / 0.2))',
 			},
 			boxShadow: {
-				'cannabis': '0 0 25px hsl(142 69% 45% / 0.4)',
-				'cyber': '0 0 25px hsl(192 100% 60% / 0.3)',
-				'purple': '0 0 25px hsl(280 60% 35% / 0.4)',
-				'glow': '0 0 25px hsl(142 69% 45% / 0.4)',
-				'cyber-glow': '0 0 25px hsl(192 100% 60% / 0.3)',
+				'neon-green': '0 0 25px hsl(105 100% 54% / 0.4)',
+				'neon-purple': '0 0 25px hsl(276 88% 53% / 0.4)',
+				'purple': '0 0 25px hsl(276 88% 53% / 0.4)',
+				'glow': '0 0 25px hsl(105 100% 54% / 0.4)',
+				'neon-glow': '0 0 25px hsl(105 100% 54% / 0.3)',
+				'alert': '0 0 25px hsl(0 69% 65% / 0.4)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -100,12 +103,12 @@ const config: Config = {
 						height: '0'
 					}
 				},
-				'cannabis-glow': {
+				'neon-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px hsl(142 69% 45% / 0.3)'
+						boxShadow: '0 0 20px hsl(105 100% 54% / 0.3)'
 					},
 					'50%': {
-						boxShadow: '0 0 35px hsl(142 69% 45% / 0.6)'
+						boxShadow: '0 0 35px hsl(105 100% 54% / 0.6)'
 					}
 				},
 				'smooth-float': {
@@ -134,25 +137,34 @@ const config: Config = {
 						transform: 'translateY(0)'
 					}
 				},
-				'cyber-pulse': {
+				'neon-pulse': {
 					'0%, 100%': {
-						textShadow: '0 0 10px hsl(192 100% 60% / 0.5)'
+						textShadow: '0 0 10px hsl(105 100% 54% / 0.5)'
 					},
 					'50%': {
-						textShadow: '0 0 20px hsl(192 100% 60% / 0.8)'
+						textShadow: '0 0 20px hsl(105 100% 54% / 0.8)'
+					}
+				},
+				'purple-pulse': {
+					'0%, 100%': {
+						textShadow: '0 0 10px hsl(276 88% 53% / 0.5)'
+					},
+					'50%': {
+						textShadow: '0 0 20px hsl(276 88% 53% / 0.8)'
 					}
 				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'cannabis-glow': 'cannabis-glow 3s ease-in-out infinite',
+				'neon-glow': 'neon-glow 3s ease-in-out infinite',
 				'smooth-float': 'smooth-float 5s ease-in-out infinite',
 				'gradient-shift': 'gradient-shift 4s ease infinite',
 				'slide-up': 'slide-up 0.6s ease-out',
-				'glow-pulse': 'cannabis-glow 3s ease-in-out infinite',
+				'glow-pulse': 'neon-glow 3s ease-in-out infinite',
 				'float': 'smooth-float 5s ease-in-out infinite',
-				'cyber-pulse': 'cyber-pulse 2.5s ease-in-out infinite',
+				'neon-pulse': 'neon-pulse 2.5s ease-in-out infinite',
+				'purple-pulse': 'purple-pulse 2.5s ease-in-out infinite',
 			}
 		}
 	},

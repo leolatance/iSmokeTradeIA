@@ -78,8 +78,8 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({
   };
 
   const TimeUnit: React.FC<{ value: number; label: string }> = ({ value, label }) => (
-    <div className="flex flex-col items-center bg-gradient-dark border border-cannabis-green/30 rounded-lg p-3 shadow-cannabis">
-      <div className="text-2xl md:text-3xl font-bold text-cannabis-green font-space">
+    <div className="flex flex-col items-center bg-gradient-dark border border-neon-green/30 rounded-lg p-3 shadow-neon-green">
+      <div className="text-2xl md:text-3xl font-bold text-neon-green font-space">
         {formatNumber(value)}
       </div>
       <div className="text-xs text-muted-foreground uppercase tracking-wider">
